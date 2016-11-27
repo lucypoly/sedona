@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <ul class="nav container white">
+        <li class="nav-left"><a href="#">информация</a></li>
+        <li class="nav-left"><a href="#">фото и видео</a></li>
+        <li class="nav-right"><a href="hotels.html">гостиницы</a></li>
+        <li class="nav-right"><a href="#">карта штата</a></li>
+    </ul>
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+</header>
+<section class="container head">
+    <div class="container-fluid">
+        <img src="images/header-text.png" alt="welcome">
+    </div>
+    <img class="header-overlay" src="images/header-overlay.png">
+</section>
+<section class="container white">
+    <div class="container-fluid">
+        <h1>СЕДОНА — небольшой городок в АРИЗОНЕ, <br>зАСЛУЖИвающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
+</section>
+<section class="container">
+    <div class="flex-start img1">
+        <div class="blue box-center">
+            <h2>НАСТОЯЩИЙ<br> ГОРОДОК</h2>
+            <p>— №1 —</p>
+            <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div>
+    </div>
+</section>
+<section class="flex container white">
+    <div class="icon box-center">
+        <img src="images/icons/house.png" alt="home">
+        <h2>жилье</h2>
+        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    </div>
+    <div class="icon box-center">
+        <img src="images/icons/burger.png" alt="food">
+        <h2>еда</h2>
+        <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
+            Вы НЕ разочаруетесь!</p>
+    </div>
+    <div class="icon box-center">
+        <img src="images/icons/gift.png" alt="gift">
+        <h2>сувениры</h2>
+        <p>Не только китайского, но и местного производства!</p>
+    </div>
+</section>
+<section class="container">
+    <div class="flex-end img2">
+        <div class="blue box-center">
+            <h2>ТАМ ЕСТЬ<br> Мост дьявола</h2>
+            <p>— №2 —</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+    </div>
+</section>
+<section class="flex container gray">
+    <div class="icon box-center">
+        <h2>небольшая площадь</h2>
+        <p>— №3 —</p>
+        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    </div>
+    <div class="icon box-center">
+        <h2>красивая дорога</h2>
+        <p>— №4 —</p>
+        <p>ХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+    </div>
+    <div class="icon box-center">
+        <h2>мало туристов</h2>
+        <p>— №5 —</p>
+        <p>Большинство едет в гранд каньон и толпится там</p>
+    </div>
+</section>
+<section class="container white">
+    <div class="container-fluid form-btn">
+        <h1 class="biger-text">Заинтересовались?</h1>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="btn-brown btn-big-text btn btn-big search-btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
+    </div>
+</section>
+<section class="container form-section">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050599723!2d-111.83015811090263!3d34.854373380999704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1480008699455"
+                width="1200" height="470" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <form class="form">
+            <div class="full">
+                <div class="form-group">
+                    <label for="in">Дата заезда: </label>
+                    <input id="in" class="date" type="date" value="2016-11-27">
+                    <button type="button" class="calendar"><img src="images/icons/calendar.png" alt="calendar"></button>
+                </div>
+                <br><br><br>
+                <div class="form-group">
+                    <label for="out">Дата выезда: </label>
+                    <input id="out" class="date" type="date" value="2016-11-28">
+                    <button type="button" class="calendar"><img src="images/icons/calendar.png" alt="calendar"></button>
+                </div>
+                <br><br><br><br>
+                <div class="left">
+                    <label for="adult">Взрослые: </label>
+                    <div class="right">
+                        <button class="down">-</button>
+                        <input id="adult" class="number" type="text" value="2" pattern="\d*" maxlength="2">
+                        <button class="up">+</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <label for="children">Дети: </label> &nbsp; &nbsp; &nbsp;
+                    <div class="right">
+                        <button class="down">-</button>
+                        <input id="children" class="number" type="text" value="0" pattern="\d*" maxlength="2">
+                        <button class="up">+</button>
+                    </div>
+                </div>
+                <button class="btn btn-big-text btn-blue full">найти</button>
+            </div>
+        </form>
+    </div>
+</section>
+<footer class="container flex">
+    <div>#visitsedona</div>
+    <div>
+        <button class="btn btn-big-text btn-blue btn-social"><img src="images/icons/twitter.png" alt="twitter"></button>
+        <button class="btn btn-big-text btn-blue btn-social"><img src="images/icons/facebook.png" alt="facebook">
+        </button>
+        <button class="btn btn-big-text btn-blue btn-social"><img src="images/icons/youtube.png" alt="youtube"></button>
+    </div>
+    <div>
+        <span class="by">website by </span><a href="#" class="developer"></a>
+    </div>
+</footer>
+</body>
+</html>
